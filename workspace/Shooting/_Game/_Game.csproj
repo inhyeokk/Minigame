@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{141CBA75-3A59-42E6-9A20-9400FA8D9EF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_Game</RootNamespace>
+    <AssemblyName>_Game</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Icon1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmPurin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurin.Designer.cs">
+      <DependentUpon>frmPurin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPurin.resx">
+      <DependentUpon>frmPurin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\039Jigglypuff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23d135f5959233acb7d3ea8b22b219e1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lavariver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_34117809-stock-photo-dark-wood-texture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_83213748-stock-photo-lava-texture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\다운로드.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\푸린_공식_일러스트.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f137009272961a25b4f4547ca6db90dee3b4ea470b7fa91556e41d8e4b8750c27a7a561a2531b58f93d78069eefc2dec632f147ade097807f2ac2e3fd8f79c2b833a9e8f702ce206ffd6a54240bce89a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d2dc16d0ced3627bf7374970d99ef09e667dc5ce2afad7f9209024613196ec881dab6a25ec80bcac33b8cf7f82ada5a845ed4896c526bb78422fc64fb27842470fb2f323130fb1c756fe1e02bcdd462e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca58113678b3a6f59846eb3e9f2904d7b248e0646dff0a7aa8973ea079b1dd8e62e2dec292ec51334239d71e9f37a1831c8d00bced48a201e67e520eb35fb1f0573a7c6f425a51a670ef144e5bbd9209.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandicam_2014-11-01_00-18-08-655.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46c79f4539c0c8934bbee8feea2d0c2a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12312.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snap065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pukrin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pupurin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ego_h07_20131112 - 복사본.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ego_h07_20131112 - 복사본 - 복사본.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ego_h07_20131112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooldimdwarf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyBullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sword1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
